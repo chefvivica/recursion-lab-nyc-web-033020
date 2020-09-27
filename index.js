@@ -34,3 +34,18 @@ function isPalindrome(str) {
 function addUpTo(myArray, index) {
   return index ? myArray[index] + addUpTo(myArray, --index) : myArray[index]
 }
+
+function maxOf(arr) {
+  if(arr.length < 2){
+    return arr[0]
+  }else if(arr.length < 3){
+    if(arr[1] < arr[0]){
+      arr.splice(1)
+    }else{
+      return arr[2]
+    }
+    else{
+      return maxOf()
+    }
+  }
+}
