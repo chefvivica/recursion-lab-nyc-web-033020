@@ -12,8 +12,8 @@ function printString(str){
 
 
 function reverseString(str){
-  let first = 
-  let sub = myString.substring(1, str.length)
+  return str[length-1]+  
+  let sub = myString.substring(0, str.length)
   return sub.push()
   
   
