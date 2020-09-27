@@ -42,3 +42,12 @@ function maxOf(arr) {
     return Math.max(arr.pop(), maxOf(arr))
   }
 }
+
+function includesNumber(arr,n) {
+ if(arr[arr.length-1] === n){
+   return true
+ }else{
+   return includesNumber(arr.pop())
+ }
+ return false
+}
