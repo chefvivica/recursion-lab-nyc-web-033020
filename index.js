@@ -23,8 +23,8 @@ function isPalindrome(str) {
   if(str.length < 2) {
     return true
   }else{
-    if(str[0] == str[str.length]){
-      isPalindrome(str.slice(1,str.length-1))
+    if(str[0] == str[str.length-1]){
+      isPalindrome(str.slice(1,str.length-2))
     }else{
       return false
     }
