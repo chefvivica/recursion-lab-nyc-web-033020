@@ -47,10 +47,8 @@ function includesNumber(arr,n) {
  if(arr[arr.length-1] === n){
    return true
  }else{
-   if(arr.length < 2){
-     return false
-   }else{
     return includesNumber(arr.pop())
-   }
- }
+  }
+  return false
+ 
 }
