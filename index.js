@@ -29,5 +29,14 @@ function isPalindrome(str) {
   else{
     return false
   }
-  
+}
+
+function addUpTo(n,arr) {
+  let sum = 0
+  if(n< 2){
+    sum = arr[0]
+    return sum 
+  }else{
+    return addUpTo(arr.slice(1,n))+ sum
+  }
 }
