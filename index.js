@@ -12,9 +12,12 @@ function printString(str){
 
 
 function reverseString(str){
-  return str[length-1]+  
-  let sub = myString.substring(0, str.length)
-  return sub.push()
-  
+   let sub = myString.substring(0, str.length)
+    return str[length-1]+ sub
+    if(sub.length >1){
+      return reverseString(sub)
+    }else{
+      return -1
+    }
   
 }
