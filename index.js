@@ -40,12 +40,12 @@ function maxOf(arr) {
     return arr[0]
   }else if(arr.length < 3){
     if(arr[1] < arr[0]){
-      arr.splice(1)
+      return arr.splice(1)
     }else{
-      return arr[2]
+      return arr.splice(0)
     }
     else{
-      return maxOf()
+      return maxOf(ar)
     }
   }
 }
