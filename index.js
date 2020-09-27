@@ -37,6 +37,6 @@ function addUpTo(n,arr) {
     sum = arr[0]
     return sum 
   }else{
-    return addUpTo(arr.slice(1,n))+ sum
+    return addUpTo(parseInt(arr.slice(1,n)))+ sum
   }
 }
