@@ -36,16 +36,9 @@ function addUpTo(myArray, index) {
 }
 
 function maxOf(arr) {
-  if(arr.length < 2){
+  if(arr.length === 1){
     return arr[0]
-  }else if(arr.length < 3){
-    if(arr[1] < arr[0]){
-      return arr.splice(1)
-    }else{
-      return arr.splice(0)
-    }
-    else{
-      return maxOf(ar)
-    }
+  }else{
+    return Math.max(arr.pop(), maxOf(arr))
   }
 }
