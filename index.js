@@ -18,3 +18,15 @@ function reverseString(str){
     return reverseString(str.substring(1, str.length))+str[0] 
   }
 }
+
+function isPalindrome(str) {
+  if(str.length < 2) {
+    return true
+  }else{
+    if(str[0] == str[str.length]){
+      isPalindrome(str.slice(1,str.length-1))
+    }else{
+      return false
+    }
+  }
+}
