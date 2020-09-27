@@ -26,6 +26,8 @@ function isPalindrome(str) {
   else if(str[0] == str[str.length-1]){
       return isPalindrome(str.slice(1,str.length-2))
   }
-  return false
+  else{
+    return false
+  }
   
 }
