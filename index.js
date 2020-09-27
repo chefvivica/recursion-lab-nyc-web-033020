@@ -15,7 +15,7 @@ function reverseString(str){
   if(str < 2){
     return str
   }else{
-    return reverseString(str.substring(1, str.length))
+    return reverseString(str.substring(1, str.length))+str[0] 
   }
   
 }
